@@ -13,4 +13,7 @@ export class LoginComponent {
   goCadastro() {
     this.route.navigateByUrl('/cadastro');
   }
+  login() {
+    this.route.navigateByUrl('/materias')
+  }
 }
