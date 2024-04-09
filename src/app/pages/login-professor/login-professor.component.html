@@ -1,1 +1,32 @@
-<p>login-professor works!</p>
+<section class="text-center mt-3">
+  <h2 class="text-xl text-black-300 font-semibold mb-4">Não é Professor ?</h2>
+  <span class="text-xl text-black-300 font-semibold mb-4">Clique em um dos botões para ir para sua respectiva
+    tela</span><br>
+  <div class="items-center mt-5">
+    <button (click)="goAluno()"
+      class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-10">Aluno</button>
+    <button (click)="goSecretario()"
+      class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Secretário</button>
+  </div>
+</section>
+<app-form-layout title="Login do Professor">
+  <form>
+    <div class="mb-4">
+      <label for="email" class="block text-gray-300 font-bold mb-2">Email:</label>
+      <input type="email" id="email" name="email" class="form-input w-full" placeholder="usuario@email.com">
+    </div>
+    <div class="mb-6">
+      <label for="senha" class="block text-gray-300 font-bold mb-2">Senha:</label>
+      <input type="password" id="senha" name="senha" class="form-input w-full" placeholder="******">
+    </div>
+    <div class="flex items-center justify-between">
+      <button type="submit"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+      <button
+        (click)="goCadastro()"
+        type="button"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Cadastre-se</button>
+    </div>
+  </form>
+
+</app-form-layout>
