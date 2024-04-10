@@ -17,12 +17,8 @@ export class LoginSecretarioComponent {
     this.router.navigateByUrl('/cadastro');
   }
 
-  goProfessor() {
-    this.router.navigateByUrl('/login-professor');
-  }
-
-  goAluno() {
-    this.router.navigateByUrl('/login-aluno');
+  goPageSecretario() {
+    this.router.navigateByUrl('/page-secretario');
   }
 
 }

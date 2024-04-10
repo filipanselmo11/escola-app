@@ -1,15 +1,20 @@
 import { Routes } from '@angular/router';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { HomeComponent } from './pages/home/home.component';
 import { LoginAlunoComponent } from './pages/login-aluno/login-aluno.component';
 import { LoginProfessorComponent } from './pages/login-professor/login-professor.component';
 import { LoginSecretarioComponent } from './pages/login-secretario/login-secretario.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageSecretarioComponent } from './pages/page-secretario/page-secretario.component';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login-aluno',
+    redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'login-aluno',
@@ -24,11 +29,11 @@ export const routes: Routes = [
     component: LoginSecretarioComponent
   },
   {
+    path: 'page-secretario',
+    component: PageSecretarioComponent
+  },
+  {
     path: 'cadastro',
     component: CadastroComponent
   },
-  {
-    path: 'materias',
-    component: HomeComponent
-  }
 ];

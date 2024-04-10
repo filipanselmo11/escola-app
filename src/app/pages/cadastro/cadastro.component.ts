@@ -26,6 +26,6 @@ export class CadastroComponent {
 
   enviarForm() {
     console.log('Cadastro Realizado com sucesso', this.cadastroForm.value);
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('/home');
   }
 }
